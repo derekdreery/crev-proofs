@@ -24,3 +24,30 @@ comment: |-
 xIMgbtTHLK3UOYYE10OVwRYUJkaQPnbGiYbbWgAzUr04qnp8uwdGH8Zf1sUq7n4QM9QOHYoh_HLXIYRNxphcBQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-12-14T11:44:41.756615520+00:00"
+from:
+  id-type: crev
+  id: nXrY6RbOf0dNGjJdcXuh9Ef54TCQp5Er_cTkpNTWy7A
+  url: "https://github.com/derekdreery/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: dbase
+  version: 0.2.2
+  revision: 20d6d4d1530feb279f3321ea772b0b904f030576
+  digest: fjZ-fo700rgar5Inza_cFwNjDywGbdV4RE89AW30BOQ
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  I read through the whole source, looking for malicious or dangerous code, and found none. There
+  was one use of `unsafe`, which I checked for correctness w.r.t. memory access and integer 
+  overflow, and found no issues. I didn't review how well the crate performed its intended 
+  function, although I use the crate and it works for me.
+----- SIGN CREV PROOF -----
+k17dL8az4hMryCm24Regk-yBfbWZg1EJldDeXl1evlz-ycNdAYXXUP_sCTa7ki8-RRvNOXaci7aOTHnPqgHHAg
+----- END CREV PROOF -----
+
