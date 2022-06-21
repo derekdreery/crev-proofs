@@ -1,0 +1,29 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2022-06-21T21:50:28.841393961+01:00"
+from:
+  id-type: crev
+  id: nXrY6RbOf0dNGjJdcXuh9Ef54TCQp5Er_cTkpNTWy7A
+  url: "https://github.com/derekdreery/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: serde_regex
+  version: 1.1.0
+  revision: 469c192282cbdf54e00c6b95d58530f1abf46b45
+  digest: mfuRRtJLIeMhpGXRfCQsRu_n00A8pOEFA0e9nJf-o3c
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  I took a look at this crate because it seems to be a low-use crate. I checked the code 
+  (Cargo.toml and lib/src.rs), it looked sensible and there weren't any red flags (no system calls, 
+  build.rs etc).
+  One comment I would make is that the Cargo.toml could do with an `include` field so that
+  the CI config files aren't uploaded with the crate. Minor point though and doesn't affect the
+  safety of the crate.
+----- SIGN CREV PROOF -----
+umuMOUxtrBgrM1url_QPSY4KEBq32fx-XQ6CPd4svVBolOBnkGay4Dyf61xHpeUslV9QC2tqStNWnzBlprpqCQ
+----- END CREV PROOF -----
+
